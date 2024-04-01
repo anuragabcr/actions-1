@@ -10,7 +10,9 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Excute shell Script
-              uses: ./generate_ascii.sh
+              run: |
+                chmod +x 
+                ./generate_ascii.sh
 
             # - name: Install cowsay program
             #   run: sudo apt-get install cowsay -y
