@@ -1,4 +1,4 @@
-name: Generate ASCII Art work
+name: Run multi jobs
 
 on: push
 
