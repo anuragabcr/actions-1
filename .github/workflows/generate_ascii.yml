@@ -11,7 +11,7 @@ jobs:
 
             - name: Excute shell Script
               run: |
-                chmod +x 
+                chmod +x generate_ascii.sh
                 ./generate_ascii.sh
 
             # - name: Install cowsay program
