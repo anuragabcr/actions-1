@@ -1,4 +1,4 @@
-name: Example Workflow
+name: Variable Workflow
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         run: echo "Global variable $GLOBAL_VAR"
 
       - name: Set up local job-level variable
-        run: echo Global variable $env.JOB_VAR"
+        run: echo Global variable $JOB_VAR"
 
       - name: Print job-level variable
         run: echo "Job-level variable $JOB_VAR"
