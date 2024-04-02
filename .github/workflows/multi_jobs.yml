@@ -33,12 +33,15 @@ jobs:
     deploy_job:
         needs: test_job
         runs-on: ubuntu-latest
+        concurrency: 
+            group: production-deployment
+            cancel-in-progress: true
         steps:
             - name: download dragon text file
               uses: actions/download-artifact@v3
               with:
                 name: dragon-text-file
-                
+
             - name: Read file
               run: cat dragon.txt
 
